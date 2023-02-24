@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+            <link rel="stylesheet" href="mansStils.css">
+        <title>Datortīkli</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            <link href="css/mansStils.css" rel="stylesheet" type="text/css"/>
+            * {box-sizing: border-box}
+            
+            body, html {
+                height: 100%;
+                margin: 0;
+                font-family: Arial;
+                padding: 0;
+               }
+               
+            .tablink {
+                 background-color: #555;
+                 color: white;
+                 float: left;
+                 border: none;
+                 outline: none;
+                 cursor: pointer;
+                 padding: 14px 16px;
+                 font-size: 17px;
+                 width: 25%;
+               }
+               
+            .tablink:hover {
+                background-color: #777;
+               }   
+               
+            .tabcontent {
+                color: white;
+                display: none;
+                padding: 100px 20px;
+                height: 100%;
+            }
+
+              #Home {background-color: #B1BAD5;}
+              #News {background-color: #D5CBB1;}
+              #Contact {background-color: #C0D7C3;}
+              #About {background-color: #D7C0D5;}
+        </style>
+        
+    </head>
+    <body>
+      <div class="w3-top">
+        </div>
+
+        <div class="w3-container">
+            
+        <button class="tablink" onclick="openPage('Home', this, '#B1BAD5')">Home</button>
+        <button class="tablink" onclick="openPage('News', this, '#D5CBB1')" id="defaultOpen">News</button>
+        <button class="tablink" onclick="openPage('Contact', this, '#C0D7C3')">Contact</button>
+        <button class="tablink" onclick="openPage('About', this, '#D7C0D5')">About</button>
+</div>
+        <div id="Home" class="tabcontent"><h2>Datortīkli</h2>
+        <div>
+            
+                <p>Datortīkls (network) jeb tīkls ir datoru un ar tiem saistīto ierīču grupa, 
+                    kas savstarpēji savienotas ar sakaru kanāliem un kas nodrošina datņu un citu
+                    resursu kopīgas izmantošanas iespējas (resource sharing) vairākiem lietotājiem.</p>
+
+                <p>Koplietošanas resursu izmantošanas un priekšrocību piemēri: </p>
+
+            <ul>
+                <li>koplietojamas datnes, kas samazina nepieciešamību tās dublēt vairākos datoros un atbrīvo no to versiju pārvaldības;
+            vienlaicīga datu lietošana, piemēram, datu bāzēs;</li>
+                <li>koplietojama programmatūra, ko iespējams lietot tieši no servera, nevis instalēt katrā datorā;</li>
+                <li>koplietojama aparatūra, kas samazina kopējās tās izmaksas, piemēram, tīklā var lietot vienu printeri vai skeneri;</li>
+                <li>lietotājs vajadzīgajiem resursiem var piekļūt no jebkura tīkla datora.</li>
+            </ul>
+                <img src="images/datortikli.jfif" alt="datortīkli">
+                <p>Vairāk par interneta pieslēguma veidiem:</p>
+                <a href="internets.html"> <img src="images/arrow right.png" alt='dodieties uz saiti' style="width:60px;height:50px;"></a>
+            </div>
+              <h2>Datortīkli</h2>
+            <div>
+
+
+        <div id="Contact" class="tabcontent">
+          <h3>Contact</h3>
+          <p>Get in touch, or swing by for a cup of coffee.</p>
+        </div>
+
+        <div id="About" class="tabcontent">
+          <h3>About</h3>
+          <p>Who we are and what we do.</p>
+        </div>
+
+        <script>
+        function openPage(pageName,elmnt,color) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablink");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.backgroundColor = "";
+          }
+          document.getElementById(pageName).style.display = "block";
+          elmnt.style.backgroundColor = color;
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+        </script>
+      </div>
+
+    </body>
+</html>
