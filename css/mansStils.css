@@ -1,0 +1,18 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : Jan 27, 2023, 2:16:58 PM
+    Author     : lvlagzdina
+*/
+
+body{
+    background-image: url("../background img.jfif");
+    background-repeat: no-repeat;
+    color: slategray;
+    font-family: verdana;
+}
+h1{
+    color: darkslateblue;
+}
