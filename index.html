@@ -6,6 +6,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 <html>
     <head>
             <link rel="stylesheet" href="mansStils.css">
+            <link rel="stylesheet" href="css/mansStils.css" type="text/css"/>
+
         <title>Datortīkli</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,7 +47,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 
               #Home {background-color: #B1BAD5;}
               #News {background-color: #D5CBB1;}
-              #Contact {background-color: #C0D7C3;}
+              #Aprēķini {background-color: #C0D7C3;}
               #About {background-color: #D7C0D5;}
         </style>
         
@@ -58,7 +60,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
             
         <button class="tablink" onclick="openPage('Home', this, '#B1BAD5')">Home</button>
         <button class="tablink" onclick="openPage('News', this, '#D5CBB1')" id="defaultOpen">News</button>
-        <button class="tablink" onclick="openPage('Contact', this, '#C0D7C3')">Contact</button>
+        <button class="tablink" onclick="openPage('Aprēķini', this, '#C0D7C3')">Aprēķini</button>
         <button class="tablink" onclick="openPage('About', this, '#D7C0D5')">About</button>
 </div>
         <div id="Home" class="tabcontent"><h2>Datortīkli</h2>
@@ -79,20 +81,23 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
             </ul>
                 <img src="images/datortikli.jfif" alt="datortīkli">
                 <p>Vairāk par interneta pieslēguma veidiem:</p>
-                <a href="internets.html"> <img src="images/arrow right.png" alt='dodieties uz saiti' style="width:60px;height:50px;"></a>
+                <a href="internets.html"> <img src="images/arrow right.png"  style="width:60px;height:50px;"></a><br>
+                <a href="mervienibas.html">Dodies uz saiti, lai veiktu aprēķinus ar GB!</a>
+                
             </div>
-              <h2>Datortīkli</h2>
+
             <div>
 
 
-        <div id="Contact" class="tabcontent">
-          <h3>Contact</h3>
-          <p>Get in touch, or swing by for a cup of coffee.</p>
+        <div id="Aprēķini" class="tabcontent">
+          <h3>Aprēķini</h3>
+          <div>
+              
+          </div>
         </div>
 
         <div id="About" class="tabcontent">
           <h3>About</h3>
-          <p>Who we are and what we do.</p>
         </div>
 
         <script>
@@ -115,5 +120,5 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         </script>
       </div>
 
-    </body>
+        </body>
 </html>
